@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Models\Booking;
+use App\Models\Property;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -20,5 +22,9 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         //
+        $properties = Property::all();
+        $bookings = Booking::all();
+	    view()->share("properties",$properties  );
+	    view()->share("bookings",$bookings  );
     }
 }

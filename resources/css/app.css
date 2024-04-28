@@ -2,16 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-
+:root {
+    --orange: #ea580c;
+    --darkgreen: #27422b;
+    --lightgreen: #477753;
+    --vintage: #F2E3DB;
+}
 
 a {
     text-decoration: none !important;
 }
 
 * {
-    margin: 0 !important;
-    padding: 0 !important;
-    box-sizing: border-box !important;
+    margin: 0 ;
+    padding: 0 ;
+    font-family: "../../public/fonts/Raleway-VariableFont_wght.ttf";
 }
 
 .left-side {
@@ -34,14 +39,26 @@ a {
 }
 
 .signIN-style {
-    transform: translateX(32%);
-
+    transform: translateX(20%);
     animation: opacity-change 0.5s ease-in-out forwards  !important;
 }
 
 .signUp-style {
-    transform: translateX(-32%);
+    transform: translateX(-20%);
     animation: opacity-change 0.5s ease-in-out forwards  !important;
+}
+
+
+.in{
+    transform: translateX(150%);
+    animation: opacity-change 0.5s ease-in-out forwards  !important;
+
+}
+
+.up{
+    transform: translateX(138%);
+    animation: opacity-change 0.5s ease-in-out forwards  !important;
+
 }
 
 @keyframes opacity-change {
@@ -53,3 +70,19 @@ a {
         opacity: 1;
     }
 }
+
+.landing{
+    background-image: url("../../public/img/landingBackground.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 80% ;
+}
+
+
+ /*! section 3 */
+.distination{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 80% ;
+}
+/*& search*/
